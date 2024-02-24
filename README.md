@@ -1,16 +1,25 @@
 # servicerequestapp
 
-A new Flutter project.
+Hello again. I did this project for learn how can i request to api and then show results on mobile app.
+So i didn't spend my time for design.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### main.dart
+There are no different event(s).
 
-A few resources to get you started if this is your first Flutter project:
+### homePage.dart
+In this page, products listed via api.
+I used gradleview.builder and carts for products listing.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### details.dart
+Contains the features of the clicked product.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### postModel.dart
+The data model is defined.
+Contains the qualities of the product (title,price,rate,etc.).
+
+### postService.dart
+
+
+
