@@ -8,9 +8,6 @@ You can acces api via this site: https://fakestoreapi.com/
 
 ## Getting Started
 
-### main.dart
-There are no different event(s).
-
 ### homePage.dart
 In this page, products listed via api.
 I used gradleview.builder and carts for products listing.
@@ -23,6 +20,6 @@ The data model is defined.
 Contains the qualities of the product (title,price,rate,etc.).
 
 ### postService.dart
-
-
+The items and their properties were retrieved from the postmodel in a list format using the getItems and getItemWithId methods.
+Dio was used to fetch the data(s).
 
