@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:servicerequestapp/service/post_model.dart';
 import 'package:servicerequestapp/service/post_service.dart';
@@ -38,7 +36,7 @@ class _ProductDetailState extends State<ProductDetail> {
           itemBuilder: (BuildContext context, int index) {
             return Padding(
               padding: const EdgeInsets.all(20),
-              child: Container(
+              child: SizedBox(
                 width: 400,
                 child: Column(
                   children: [
@@ -47,12 +45,12 @@ class _ProductDetailState extends State<ProductDetail> {
                       width: 200,
                       height: 200,
                     ),
-                    Padding(padding: EdgeInsets.only(top: 20)),
+                    const Padding(padding: EdgeInsets.only(top: 20)),
                     Text(
                       _commentitem?[index].title ?? '',
                       style: Theme.of(context).textTheme.titleMedium,
                     ),
-                    Padding(padding: EdgeInsets.only(top: 20)),
+                    const Padding(padding: EdgeInsets.only(top: 20)),
                     Align(
                       alignment: Alignment.bottomLeft,
                       child: Text(
@@ -61,7 +59,7 @@ class _ProductDetailState extends State<ProductDetail> {
                         style: Theme.of(context).textTheme.titleMedium,
                       ),
                     ),
-                    Padding(padding: EdgeInsets.only(top: 15)),
+                    const Padding(padding: EdgeInsets.only(top: 15)),
                     Text(
                       _commentitem?[index].description ?? '',
                       style: Theme.of(context).textTheme.bodyMedium,
